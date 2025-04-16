@@ -11,6 +11,8 @@ import logo from "/img/logofuni.png";
 export function Header() {
   const [sing, setSing] = useState(true);
   const [product, setProduct] = useState(6);
+  setProduct;
+  setSing;
 
   return (
     <header className=" hidden items-center justify-between px-20 py-4 md:flex">
