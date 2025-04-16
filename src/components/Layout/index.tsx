@@ -5,7 +5,7 @@ import Menu from "../Menu";
 
 export function Layout() {
   return (
-    <div className="w-full min-h-screen border-4 border-amber-500">
+    <div className="w-full min-h-screen">
       <Menu />
       <Header />
       <Outlet />
