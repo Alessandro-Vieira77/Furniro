@@ -1,1 +1,9 @@
 @import "tailwindcss";
+
+@theme {
+  --spacing-550: 34.375rem;
+  --spacing-480: 30rem;
+  --spacing-443: 27.6875rem;
+  --color-bgOrange: #fff3e3;
+  --color-titleOrange: #b88e2f;
+}
