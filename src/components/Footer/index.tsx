@@ -21,18 +21,26 @@ export function Footer() {
           </p>
           {/* social */}
           <div className="flex gap-4">
-            <div className="w-9 h-9 rounded-full flex items-center justify-center shadow-lg hover:shadow-orange-500 hover:shadow-xl">
-              <TiSocialFacebook size={20} />
-            </div>
-            <div className="w-9 h-9 rounded-full flex items-center justify-center shadow-lg  hover:shadow-orange-500 hover:shadow-xl">
-              <IoLogoInstagram size={20} />
-            </div>
-            <div className="w-9 h-9 rounded-full flex items-center justify-center shadow-lg  hover:shadow-orange-500 hover:shadow-xl">
-              <FaTwitter size={20} />
-            </div>
-            <div className="w-9 h-9 rounded-full flex items-center justify-center shadow-lg  hover:shadow-orange-500 hover:shadow-xl">
-              <RiLinkedinFill size={20} />
-            </div>
+            <a target="_blank" href="https://www.facebook.com/">
+              <div className="w-9 h-9 rounded-full flex items-center justify-center shadow-lg hover:shadow-orange-500 hover:shadow-xl">
+                <TiSocialFacebook size={20} />
+              </div>
+            </a>
+            <a target="_blank" href="https://www.instagram.com/">
+              <div className="w-9 h-9 rounded-full flex items-center justify-center shadow-lg  hover:shadow-orange-500 hover:shadow-xl">
+                <IoLogoInstagram size={20} />
+              </div>
+            </a>
+            <a target="_blank" href="https://x.com/?lang=pt">
+              <div className="w-9 h-9 rounded-full flex items-center justify-center shadow-lg  hover:shadow-orange-500 hover:shadow-xl">
+                <FaTwitter size={20} />
+              </div>
+            </a>
+            <a target="_blank" href="https://www.linkedin.com/">
+              <div className="w-9 h-9 rounded-full flex items-center justify-center shadow-lg  hover:shadow-orange-500 hover:shadow-xl">
+                <RiLinkedinFill size={20} />
+              </div>
+            </a>
           </div>
         </div>
 
