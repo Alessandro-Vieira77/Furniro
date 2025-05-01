@@ -8,7 +8,7 @@ import { Slide } from "../../components/Slide";
 
 export function Home() {
   return (
-    <main className="flex flex-col gap-14 w-full h-full mb-9">
+    <main className="flex flex-col gap-14 w-full h-full mb-10">
       <section className="flex justify-end items-center w-full min-h-550 mb-10 px-5 py-5 md:px-14 md:py-14 bg-[url('https://i.imgur.com/m7gsqlY.png')] bg-cover bg-center">
         <div className="w-xl flex flex-col  gap-7 bg-bgOrange px-11 py-11">
           <div className="w-full flex flex-col gap-3">
