@@ -1,5 +1,10 @@
-import { Container } from "../../components/Container";
 import { Link } from "react-router-dom";
+// icons
+import { Container } from "../../components/Container";
+import { Card } from "../../components/Card";
+import { Slide } from "../../components/Slide";
+
+// import Slide from "../../components/Slide";
 
 export function Home() {
   return (
@@ -35,10 +40,10 @@ export function Home() {
           Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         </p>
         <div className="flex justify-between items-center gap-10 w-full">
-          <div className="flex flex-col gap-5 w-30 md:w-50 lg:w-70 xl:w-96 justify-center rounded-t-2xl">
+          <div className="flex flex-col gap-5 sm:w-40 md:w-50 lg:w-70 xl:w-96 justify-center rounded-t-2xl">
             <img
               content="center"
-              className="w-30 h-40  md:w-50 md:h-70 lg:w-70 lg:h-96 xl:w-96 xl:h-480"
+              className="w-full sm:h-50  md:h-70  lg:h-96 xl:h-480"
               src="https://i.imgur.com/77UDWr1.png"
               alt="product"
             />
@@ -50,10 +55,10 @@ export function Home() {
             </Link>
           </div>
 
-          <div className="flex flex-col gap-5 w-30 md:w-50 lg:w-70 xl:w-96 justify-center rounded-t-2xl">
+          <div className="flex flex-col gap-5 sm:w-40 md:w-50 lg:w-70 xl:w-96 justify-center rounded-t-2xl">
             <img
               content="center"
-              className="w-30 h-40  md:w-50 md:h-70 lg:w-70 lg:h-96 xl:w-96 xl:h-480"
+              className="w-full sm:h-50  md:h-70  lg:h-96 xl:h-480"
               src="https://i.imgur.com/77UDWr1.png"
               alt="product"
             />
@@ -65,10 +70,10 @@ export function Home() {
             </Link>
           </div>
 
-          <div className="flex flex-col gap-5 w-30 md:w-50 lg:w-70 xl:w-96 justify-center rounded-t-2xl">
+          <div className="flex flex-col gap-5 sm:w-40 md:w-50 lg:w-70 xl:w-96 justify-center rounded-t-2xl">
             <img
               content="center"
-              className="w-30 h-40  md:w-50 md:h-70 lg:w-70 lg:h-96 xl:w-96 xl:h-480"
+              className="w-full sm:h-50  md:h-70  lg:h-96 xl:h-480"
               src="https://i.imgur.com/77UDWr1.png"
               alt="product"
             />
@@ -81,6 +86,36 @@ export function Home() {
           </div>
         </div>
       </Container>
+
+      <Container>
+        <h1 className="font-bold text-2xl md:text-4xl mb-12">Our Products</h1>
+        <Card />
+        <button className="mt-8 w-50 h-12 text-titleOrange font-medium border-2 border-titleOrange cursor-pointer ">
+          Show More
+        </button>
+      </Container>
+
+      <section className="flex  items-center w-full h-full 2xl:pl-20 bg-bgCarrosel py-11 flex-wrap flex-col-reverse gap-8 2xl:flex-row 2xl:flex-nowrap justify-center overflow-hidden">
+        <div className="flex flex-col gap-5 w-full max-w-443 items-center">
+          <h2 className="font-bold text-2xl md:text-4xl">
+            50+ Beautiful rooms <br />
+            inspiration
+          </h2>
+          <p className="font-medium text-zinc-400 text-sm md:text-base">
+            Our designer already made a lot of beautiful
+            <br />
+            prototipe of rooms that inspire you
+          </p>
+          <Link
+            className="w-40  md:w-52 font-bold text-white uppercase text-center py-3 md:py-6 bg-titleOrange text-sm md:text-base"
+            to=""
+          >
+            Explore More
+          </Link>
+        </div>
+        <Slide />
+      </section>
+      {/* <div className="w-full h-480"></div> */}
     </main>
   );
 }
